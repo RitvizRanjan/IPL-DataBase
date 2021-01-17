@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-repeat: no repeat;
+            background-size: 100%;
+        }
+
+        form {
+            border: 0px solid #f2a1f2;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=EMAIL] {
+            width: 20%;
+            height: 35px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #4CAF50;
+            box-sizing: border-box;
+        }
+
+        label {
+            width: 300px;
+            display: inline-block;
+            font-size: larger;
+            color: bisque
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body background="img/ball.jpg">
+    <h1 style="text-align:center;"><b>CREATE AN ACCOUNT</b></h1>
+    <form action="create.php" method="post">
+        <div class="imgcontainer">
+
+        </div>
+
+        <div class="container" style="text-align:center;">
+            <label for="uname"><b> NEW USER: </b></label>
+            <input type="text" placeholder="Enter name" name="uname" required style="text-align:center;"><br><br>
+            <label for="uname"><b> ENTER EMAIL:</b></label>
+            <input type="EMAIL" placeholder="Enter email" name="email" required
+                style="text-align:center; width: 300px;height: 25px;"><br><br>
+            <label for="uname"><b> PASSWORD: </b></label>
+            <input type="password" placeholder="Enter password" name="psw" required style="text-align:center;"><br><br>
+            <label for="uname"><b>CONFIRM PASSWORD:</b></label>
+            <input type="password" placeholder="Enter password" name="conpsw" required
+                style="text-align:center;"><br><br>
+
+
+
+            <button type="submit" style="text-align:center;background-color:green;color:white;">SUBMIT</button><br><br>
+            <button1 style="float:center; font-size:large;"><b style="color:beige">Already have an Acoount</b><b
+                    style="color:aliceblue" href="login.html">-->login</b>
+            </button1>
+
+        </div>
+
+
+</body>
+
+</html>
